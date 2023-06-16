@@ -120,6 +120,13 @@ body {
     border-radius: 100%;
 }
 
+#canada{
+    fill: red;
+    margin: 0 0.25em 0  0;
+
+
+}
+
 .photos {
     display: flex;
     flex-wrap: wrap;
