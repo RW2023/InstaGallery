@@ -1,0 +1,224 @@
+/* CSS Reset */
+
+:root {
+    --background: #27374D;
+    --main: #526D82;
+    --highlight: #9DB2BF;
+    --secondary: #DDE6ED;
+
+    --overlay: rgba(157, 178, 191, 0.5);
+    --button: #526D82;
+    --headline: #DDE6ED;
+    --paragraph: #9DB2BF;
+    --buttonText: #27374D;
+    --stroke: #202A3B;
+    --tertiary: #404B5A;
+    --shadow: #1A212C;
+    --dropShadow: 0 0 0.5em var(--shadow);
+    --radiusStyle1: 20px 20px 37px 37px / 23px 30px 0px 0px;
+    --buttonRadius: 1em 1em 1em 1em;
+}
+
+/* CSS Reset */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100%;
+    min-width: 100vh;
+}
+
+/* End of CSS Reset */
+
+
+/* Global Styles */
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-family: 'poppins', sans-serif;
+    background-color: var(--tertiary);
+}
+
+.toolbar {
+    position: fixed;
+    margin: 0 0 1em 0 ;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-self: center;
+    background-color: var(--background);
+    padding: 10px;
+    color: var(--headline);
+    box-shadow: var(--dropShadow);
+    -webkit-text-stroke-color: 1px var(--stroke);
+    margin: auto;
+    text-shadow: var(--shadow);
+    border:1px solid var(--headline);
+    border-radius: var(--radiusStyle1);
+}
+
+.fa-hand{
+font-size: 3em;
+
+}
+
+.toolbar a {
+    color: var(--headline);
+
+
+}
+
+#hero {
+    background: bottom / 100% url('/src/img/DandelionBW.jpg');
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* .hero img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}    */
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin: 20px 0;
+    color: var(--buttonText);
+    border: 1px solid var(--highlight);
+    margin: 1em;
+    padding: 1em;
+    width: 80%;
+    margin: auto;
+    margin-top: 2em;
+    border: 1px solid var(--stroke);
+    border-radius: var(--radiusStyle1);
+    box-shadow: var(--dropShadow);
+    background-color: var(--secondary);
+}
+
+.bio img {
+    display: inline;
+    width: 100%;
+    max-width: 12em;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 1em;
+    margin: auto;
+    padding: 1em;
+    align-self: center;
+    width: 80%;
+    
+        margin: 1em;
+        padding: 1em;
+        
+        
+        margin-top: 2em;
+        border: 1px solid var(--stroke);
+        border-radius: 0.25em;
+        box-shadow: var(--dropShadow);
+        background-color: var(--secondary);
+}
+
+.photos img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin: auto;
+}
+
+
+
+#galleryTitle {
+    color: var(--headline);
+    text-align: center;
+}
+
+
+img {
+    border: 1px solid var(--highlight);
+    border-radius: var(--radiusStyle1);
+    padding: .25em;
+    background-color: var(--overlay);
+    margin: 0.25em;
+    box-shadow: var(--dropShadow);
+}
+
+
+
+@media (max-width: 600px) {
+
+#hero {
+    height: 510px;
+}
+
+
+    p,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: 1.5em;
+    }
+
+    .photos {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .photos img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        display: block;
+        margin: auto;
+        margin: auto;
+    }
+
+    .toolbar {
+        display: flex;
+        justify-content: center;
+        align-items: space-between;
+        flex-wrap: wrap;
+        
+        /* align-content: space-between; */
+    }
+
+    .toolbar h1 {
+        display: inline-block;
+        margin: 1em;
+    }
+
+    .bio img{
+max-width: 10em;
+    }
+}
