@@ -173,7 +173,8 @@ img {
 @media (max-width: 600px) {
 
 #hero {
-    height: 510px;
+    display: none;
+    height: 20em;
 }
 
 
@@ -209,6 +210,7 @@ img {
         justify-content: center;
         align-items: space-between;
         flex-wrap: wrap;
+    ;
           /* align-content: space-between; */
     }
 
@@ -224,6 +226,9 @@ img {
         text-align: center;
     }
 
+    .bio{
+        margin-top: 16em;
+    }
     .bio img{
 max-width: 10em;
     }
