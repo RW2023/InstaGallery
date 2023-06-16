@@ -44,7 +44,7 @@ body {
 
 .toolbar {
     position: fixed;
-    margin: 0 0 1em 0 ;
+    margin: 0 0 1em 0;
     width: 80%;
     display: flex;
     flex-wrap: wrap;
@@ -58,12 +58,12 @@ body {
     -webkit-text-stroke-color: 1px var(--stroke);
     margin: auto;
     text-shadow: var(--shadow);
-    border:1px solid var(--headline);
+    border: 1px solid var(--headline);
     border-radius: var(--radiusStyle1);
 }
 
-.fa-hand{
-font-size: 3em;
+.fa-hand {
+    font-size: 3em;
 
 }
 
@@ -130,16 +130,16 @@ font-size: 3em;
     padding: 1em;
     align-self: center;
     width: 80%;
-    
-        margin: 1em;
-        padding: 1em;
-        
-        
-        margin-top: 2em;
-        border: 1px solid var(--stroke);
-        border-radius: 0.25em;
-        box-shadow: var(--dropShadow);
-        background-color: var(--secondary);
+
+    margin: 1em;
+    padding: 1em;
+
+
+    margin-top: 2em;
+    border: 1px solid var(--stroke);
+    border-radius: 0.25em;
+    box-shadow: var(--dropShadow);
+    background-color: var(--secondary);
 }
 
 .photos img {
@@ -172,10 +172,10 @@ img {
 
 @media (max-width: 600px) {
 
-#hero {
-    display: none;
-    height: 20em;
-}
+    #hero {
+        display: none;
+        height: 20em;
+    }
 
 
     p,
@@ -211,8 +211,8 @@ img {
         justify-content: center;
         align-items: space-between;
         flex-wrap: wrap;
-    ;
-          /* align-content: space-between; */
+        width: 100%;
+        /* align-content: space-between; */
     }
 
     .toolbar h1 {
@@ -227,10 +227,11 @@ img {
         text-align: center;
     }
 
-    .bio{
+    .bio {
         margin-top: 16em;
     }
-    .bio img{
-max-width: 10em;
+
+    .bio img {
+        max-width: 10em;
     }
 }
