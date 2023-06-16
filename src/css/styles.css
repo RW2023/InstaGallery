@@ -108,6 +108,8 @@ body {
 }
 
 .bio img {
+    position: relative;
+        z-index: 0;
     display: inline;
     width: 100%;
     max-width: 12em;
@@ -225,6 +227,7 @@ img {
         display: inline-block;
         margin: 1em;
         text-align: center;
+        font-size: 1.5em;
     }
 
     .bio {
