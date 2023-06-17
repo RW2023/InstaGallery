@@ -5,11 +5,23 @@ anime({
     easing: 'easeOutCubic' // Speed curve for the animation
 });
 
+anime({
+    targets: '#canada-flag-path',
+    strokeDashoffset: [anime.setDashoffset, 0],
+    easing: 'easeInOutSine',
+    duration: 1500,
+    delay: function (el, i) { return i * 250 },
+    direction: 'alternate',
+    loop: true
+});
+
+
 // Assign your timeline to the 'photosAnimation' variable
 let photosAnimation = anime.timeline({
     targets: '.photos img',
     easing: 'easeOutElastic(1, .8)',  // Easing function for bounce effect
     delay: anime.stagger(200)
+    
 })
     .add({
         translateY: ['-100%', '0%'],
@@ -29,11 +41,12 @@ const photosObserver = new IntersectionObserver((entries) => {
             photosAnimation.play();  // Start the anime.js timeline
         }
     });
-}, { threshold: 0.7 });  // Adjust the threshold according to when you want the animation to start
+}, { threshold: 0.1 });  // Adjust the threshold according to when you want the animation to start
 
 // Start observing the '.photos' div
 photosObserver.observe(document.querySelector('.photos'));
 
+//make hand wave less often
 // Create the hand animation outside of the waveHand function
 const handAnimation = anime({
     targets: '.fa-hand',
@@ -52,3 +65,6 @@ function waveHand() {
 
 // Call waveHand every 10 seconds
 setInterval(waveHand, 10000);
+console.log(document.querySelector('#canada').getTotalLength());
+
+
